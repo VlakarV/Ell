@@ -1,0 +1,183 @@
+/*Подключение шрифтов*/
+@font-face {
+	font-family: 'AquireA';
+	src: url('../fonts/AquireBold-8Ma60.eot');
+	src: local('☺'), url('../fonts/AquireBold-8Ma60.woff') format('woff'), url('../fonts/AquireBold-8Ma60.ttf') format('truetype'), url('../fonts/AquireBold-8Ma60.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ArialNarrow';
+	src: url('../fonts/ARIALNB.eot');
+	src: local('☺'), url('../fonts/ARIALNB.woff') format('woff'), url('../fonts/ARIALNB.ttf') format('truetype'), url('../fonts/ARIALNB.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ArialNarrowR';
+	src: url('../fonts/ArialNarrowRegular.eot');
+	src: local('☺'), url('../fonts/ArialNarrowRegular.woff') format('woff'), url('../fonts/ArialNarrowRegular.ttf') format('truetype'), url('../fonts/ArialNarrowRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('../fonts/Myriad Pro Regular.eot');
+	src: local('☺'), url('../fonts/Myriad Pro Regular.woff') format('woff'), url('../fonts/Myriad Pro Regular.ttf') format('truetype'), url('../fonts/Myriad Pro Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+    background: url(../img/backgroung.jpg);
+    
+}
+
+.content {
+    max-width: 900px;
+	margin: 0px auto;
+}
+
+
+.content-logo {
+    background-image: linear-gradient(to top, #0826d9, #08d9d6), linear-gradient(to bottom, #0826d9, #0826d9);
+    font-family: 'AquireA';
+    color: #08d9d6;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 56.5px;
+}
+
+
+
+
+.content-top__heading {
+    width: 901px;
+    height: 229px;
+    color: #00c3ff;
+    font-family: 'ArialNarrow';
+    font-size: 100.5px;
+}
+.content-top__info {
+    font-family: 'ArialNarrowR';
+    font-size: 47.5px;
+    color: #b5f8ff;
+}
+
+
+.content-bottom {
+    font-family: 'MyriadPro';
+    
+}
+
+
+
+.c-b-b__b_1 {
+    margin: 80px 0 10px 0;
+    /*clip-path: polygon(0% 0%, 99% 0%, 91% 100%, 0% 100%);*/
+    border: 3px solid #b5f8ff;
+    font-size: 30px;
+    color: #b5f8ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 51%;
+    height: 60px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+}
+.c-b-b__b_1::before,
+.c-b-b__b_1::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #008bb6;
+    top: 0;
+    left: -100%;
+    opacity: .5;
+    transition: .3s;
+    z-index: -1;
+}
+.c-b-b__b_1::after {
+    opacity: 1;
+    transition-delay: .2s;
+}
+.c-b-b__b_1:hover {
+    color: #ffffff;
+}
+.c-b-b__b_1:hover::before,
+.c-b-b__b_1:hover::after {
+    left: 0;
+}
+
+.c-b-b__b_2 {
+    /*clip-path: polygon(0% 0%, 100% 0%, 91% 100%, 0% 100%);*/
+    border: 3px solid #b5f8ff;
+    font-size: 30px;
+    color: #b5f8ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 51%;
+    height: 60px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+}
+.c-b-b__b_2::before,
+.c-b-b__b_2::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #008bb6;
+    top: 0;
+    left: -100%;
+    opacity: .5;
+    transition: .3s;
+    z-index: -1;
+}
+.c-b-b__b_2::after {
+    opacity: 1;
+    transition-delay: .2s;
+}
+.c-b-b__b_2:hover {
+    color: #fff;
+}
+.c-b-b__b_2:hover::before,
+.c-b-b__b_2:hover::after {
+    left: 0;
+}
+
+
